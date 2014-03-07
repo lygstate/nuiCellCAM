@@ -1663,7 +1663,7 @@ void debug_message(char *msg)
 {
 	if(g_debugmode)
 	{
-		__android_log_print(ANDROID_LOG_INFO,"TEST",msg);
+		__android_log_print(ANDROID_LOG_INFO,"TEST", "%s", msg);
 	}
 	else
 	{
